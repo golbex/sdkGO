@@ -2,6 +2,6 @@ package sdkGO
 
 import "math/rand"
 
-func Random(min int, max int) int {
-	return rand.Intn(max-min) + min
+func Random(min float64, max float64) float64 {
+	return min + rand.Float64() * (max - min)
 }
